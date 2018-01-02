@@ -1,0 +1,22 @@
+
+<p>
+<div style="position: fixed; top: 0; left: 0;">
+    Page Size:
+    <select (change)="onPageSizeChanged(value)" id="page-size">
+        <option value="1" selected="">1</option>
+        <option value="2">2</option>
+        <option value="4">3</option>
+        <option value="5">5</option>
+    </select>
+</div><p>
+  <div>
+    <ag-grid-angular style="width: 90%; height: 350px;" class="ag-theme-fresh"              
+                 [rowData]="rowDataMaster" 
+               [gridOptions]="gridOptions"  (gridReady)="onGridReady($event)"
+                    
+                  ></ag-grid-angular>
+</div>
+
+
+
+
