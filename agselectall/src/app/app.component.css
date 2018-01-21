@@ -1,3 +1,58 @@
+.ag-fresh{
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    fotnt-size: 11px;
+}
+.ag-fresh .ag-root {
+  border: 2;
+}
+.ag-fresh .ag-header-container {
+  background: #ff0080;
+}
+.ag-fresh .ag-header { 
+  border-bottom: 2px solid #000;
+}
+.ag-fresh .ag-header-row {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 1em;
+  color: #000;
+  background: #008040;
+  border: none;
+}
+.ag-fresh .ag-ltr .ag-header-cell {
+  padding: 10px;
+  border: none
+}
+.ag-fresh .ag-row {
+  border-bottom: 1px solid #ddd;
+}
+.ag-fresh .ag-row:nth-child(odd) {
+  border-top: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+.ag-fresh .ag-row:last-child {
+  border-bottom: none;
+}
+.ag-fresh .ag-row:hover {
+  background-color: #d9edf7;
+  border-top: 1px solid #aaa;  
+  border-color: #aaa;
+}
+.ag-fresh .ag-row .ag-cell {
+  color: #333;
+  padding: 10px 15px;
+}
+.ag-fresh .ag-row .ag-cell:focus,
+.ag-fresh .ag-row .ag-cell:hover {
+  font-weight: bold;
+  background-color: #d0edf3 ;
+  color:#000;
+}
+
+
+
+
+
 .align-right {
   text-align: right;
 }
@@ -50,4 +105,73 @@
 .full-width-search {
     border: 1px solid #eee;
     margin-left: 10px;
+}
+
+
+
+.ag-cell-label-container{
+    /*Necessary to allow for text to grow vertically*/
+    height: 100%;
+}
+
+.ag-header-cell-label {
+    /*Necessary to allow for text to grow vertically*/
+    height: 100%;
+    padding:0 !important;
+}
+
+ .ag-header-cell-text{
+    /*Force the width corresponding at how much width
+    we need once the text is layed out vertically*/
+    width: 30px;
+    transform: rotate(90deg);
+    margin-top: 50px;
+    /*Since we are rotating a span*/
+    display: inline-block;
+    float: left;
+    font-size: 21px;
+}
+
+
+
+.customHeaderMenuButton{
+    margin-top: 5px;
+    margin-left: 4px;
+    float: right;
+}
+
+.customHeaderLabel{
+    margin-left: 5px;
+    margin-top: 3px;
+    float: right;
+    
+}
+
+.customSortDownLabel{
+    float: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.customSortUpLabel{
+    float: left;
+    margin-left: 3px;
+    margin-top: 4px;
+}
+
+.customSortRemoveLabel{
+    float: right;
+    font-size: 21px;
+    margin-left: 3px;
+    margin-top: 6px;
+}
+
+.active {
+    color: #ff0080;
+}
+
+.hidden { display:none; }
+
+.customHeaderLabel{
+	font-size: 21px;
 }
